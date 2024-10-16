@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: devApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/devblogapp
+    username: springstudent
+    password: springstudent
+  jpa:
+    hibernate:
+      ddl-auto: update
+  app:
+    jwtExpirationMs: 172800000
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 9977subhashchand@gmail.com
+    password: rbywrufscxcifrnt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+frontend:
+  url: "http://localhost:5173"
+
+#  security:
+#    user:
+#      name: user
+#      password: user
